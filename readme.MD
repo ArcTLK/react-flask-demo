@@ -53,3 +53,14 @@ def hello_world():
 7. Finally, run `flask run` to run your flask application!
 
 ### Adding database functionality using tinydb
+As quoted from the Tinydb package page at <https://pypi.org/project/tinydb/>:
+> TinyDB is a lightweight document oriented database optimized for your happiness :) It’s written in pure Python and has no external dependencies. The target are small apps that would be blown away by a SQL-DB or an external database server.
+
+**_Important Note_**: **Tinydb is not meant to be used for a HTTP server as it does not provide ACID guarantees. It is only being used here for example purposes!**
+
+To install tinydb, first make sure that your virtual environment is running, then run: `pip install tinydb`. After that, you should be able to use tinydb as usual in your `app.py` file.
+
+You can find the documentation for tinydb at <https://tinydb.readthedocs.io/en/latest/>.
+
+### JWT Authentication using PyJWT
+To install python-jwt, run: `pip install PyJWT`.
