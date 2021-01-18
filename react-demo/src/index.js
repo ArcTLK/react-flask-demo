@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery/dist/jquery.js';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
