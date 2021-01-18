@@ -13,3 +13,7 @@ To run the application, first navigate to the new folder using: `cd react-demo`
 Then, run: `npm start`
 
 To start designing your application, you can wipe the content present in `./src/App.css` and `./src/App.js` and write your own code!
+
+### Adding Bootstrap
+You can add Bootstrap to your application by running `npm install bootstrap` and then adding:
+`import 'bootstrap/dist/css/bootstrap.css';` to the start of the `index.js` file.
