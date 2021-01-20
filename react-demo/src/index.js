@@ -3,9 +3,13 @@ import 'jquery/dist/jquery.js';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+import { Config } from './config';
+axios.defaults.baseURL = Config.apiUrl;
 
 ReactDOM.render(
   <React.StrictMode>

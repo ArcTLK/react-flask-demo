@@ -28,10 +28,19 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 The Create React App tool doesn't come with the React Router package by default. To add it, run:
 `npm install react-router-dom`
 
-You can then follow the basic example given here: <https://reactrouter.com/web/example/basic> to familiarize yourself with the components used for navigation to work. In this application, we have three routes, one for login, another for registration and finally one for a dummy dashboard.
+You can then follow the basic example given here: <https://reactrouter.com/web/example/basic> to familiarize yourself with the components used for navigation to work. In this application, we have four routes, two for login / logout, another for registration and finally one for a dummy dashboard.
 
 ### Folder Structure
 The Create React App tool doesn't specify any specific folder structure to follow. In this application, I've created a components folder within the src folder where I will include files for my components as required. It doesn't really matter in this application because of its size, however if your application is complex, deciding on a good folder structure before starting is recommended.
+
+### HTTP AJAX requests using Axios
+Vanilla JavaScript provides us with two ways to make HTTP requests - the XMLHttpRequestObject and the Fetch API. Both however, are lower level ways to do AJAX requests and are meant to be abstracted using a custom function anyway. So we'll be using a library called Axios that does just this and much more. To install axios, run `npm install axios`.
+
+### Feedback using toasters
+Since AJAX requests don't give any feedback to the user whether they succeeded or failed automatically, it is upto the developer to do so. You can use `react-toastify` for this. To install it, run `npm install react-toastify`. You can learn how to use it at <https://fkhadra.github.io/react-toastify/introduction/>.
+
+### Route guards using react-router-guards
+We can add route guards using `react-router-guards` to ensure that only logged-in users can access pages that require authorization. You can install it using `npm install react-router-guards` and find its documentation at <https://www.npmjs.com/package/react-router-guards>.
 
 ## Documentation (Flask)
 ### How to start?
@@ -52,6 +61,9 @@ def hello_world():
 ```
 7. Finally, run `flask run` to run your flask application!
 
+### A Note on CORS
+CORS would be an issue for us since our client and API applications are running on different hostnames. To bypass this issue, we can use the `flask-cors` package by running `pip install flask-cors` and including it in our application. To do so, you can follow the example on their package web page at <https://pypi.org/project/Flask-Cors/>.
+
 ### Adding database functionality using tinydb
 As quoted from the Tinydb package page at <https://pypi.org/project/tinydb/>:
 > TinyDB is a lightweight document oriented database optimized for your happiness :) It’s written in pure Python and has no external dependencies. The target are small apps that would be blown away by a SQL-DB or an external database server.
@@ -62,5 +74,8 @@ To install tinydb, first make sure that your virtual environment is running, the
 
 You can find the documentation for tinydb at <https://tinydb.readthedocs.io/en/latest/>.
 
+### Password hashing using bcrypt
+Using the bcrypt library, we can safely store our passwords in our database. To install bcrypt, run `pip install bcrypt`.
+
 ### JWT Authentication using PyJWT
-To install python-jwt, run: `pip install PyJWT`.
+To install python-jwt, run: `pip install PyJWT`. You can look up its usage at <https://github.com/jpadilla/pyjwt>.
