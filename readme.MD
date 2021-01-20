@@ -34,7 +34,7 @@ You can then follow the basic example given here: <https://reactrouter.com/web/e
 The Create React App tool doesn't specify any specific folder structure to follow. In this application, I've created a components folder within the src folder where I will include files for my components as required. It doesn't really matter in this application because of its size, however if your application is complex, deciding on a good folder structure before starting is recommended.
 
 ### HTTP AJAX requests using Axios
-Vanilla JavaScript provides us with two ways to make HTTP requests - the XMLHttpRequestObject and the Fetch API. Both however, are lower level ways to do AJAX requests and are meant to be abstracted using a custom function anyway. So we'll be using a library called Axios that does just this and much more. To install axios, run `npm install axios`.
+Vanilla JavaScript provides us with two ways to make HTTP requests - the XMLHttpRequest Object and the Fetch API. Both however, are lower level ways to do AJAX requests and are meant to be abstracted using a custom function anyway. So we'll be using a library called Axios that does just this and much more. To install axios, run `npm install axios`.
 
 ### Feedback using toasters
 Since AJAX requests don't give any feedback to the user whether they succeeded or failed automatically, it is upto the developer to do so. You can use `react-toastify` for this. To install it, run `npm install react-toastify`. You can learn how to use it at <https://fkhadra.github.io/react-toastify/introduction/>.
