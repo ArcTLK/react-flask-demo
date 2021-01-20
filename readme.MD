@@ -78,4 +78,4 @@ You can find the documentation for tinydb at <https://tinydb.readthedocs.io/en/l
 Using the bcrypt library, we can safely store our passwords in our database. To install bcrypt, run `pip install bcrypt`.
 
 ### JWT Authentication using PyJWT
-To install python-jwt, run: `pip install PyJWT`. You can look up its usage at <https://github.com/jpadilla/pyjwt>.
+To install PyJWT, run: `pip install PyJWT`. You can look up its usage at <https://github.com/jpadilla/pyjwt>.
